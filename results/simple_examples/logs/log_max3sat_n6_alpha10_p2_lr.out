@@ -1,0 +1,73 @@
+using alpha=1.0 with 3 variables and 3 clauses
+SAT Formula:
+[((1, True), (0, True), (2, True)), ((1, True), (0, False), (2, True)), ((2, True), (1, False), (0, True))]
+SAT formula converted to QUBO: 
+[[ 0.  -0.5  0.5 -0.5  0.5 -0.5]
+ [-0.5  0.   0.5 -0.5 -0.5  0.5]
+ [ 0.5  0.5 -1.  -0.5 -0.5 -0.5]
+ [-0.5 -0.5 -0.5  2.   0.   0. ]
+ [ 0.5 -0.5 -0.5  0.   1.   0. ]
+ [-0.5  0.5 -0.5  0.   0.   1. ]]
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Running qaoa with 6 qubits from p=1 to p=2 within bounds [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32
+-----------------------------------------------------------------------------------------------------------------------------------------------
+creating result directory...
+loading problem...
+./qubos/3sat_6qubits_n3_m3_alpha10
+Problem: SparsePauliOp(['IIIIIZ', 'IIIIZI', 'IIIZII', 'IIZIII', 'IZIIII', 'ZIIIII', 'IIIIZZ', 'IIIZIZ', 'IIIZZI', 'IIZIIZ', 'IIZIZI', 'IIZZII', 'IZIIIZ', 'IZIIZI', 'IZIZII', 'ZIIIIZ', 'ZIIIZI', 'ZIIZII'],
+              coeffs=[ 0.09375+0.j,  0.09375+0.j,  0.28125+0.j, -0.09375+0.j, -0.09375+0.j,
+ -0.09375+0.j, -0.03125+0.j,  0.03125+0.j,  0.03125+0.j, -0.03125+0.j,
+ -0.03125+0.j, -0.03125+0.j,  0.03125+0.j, -0.03125+0.j, -0.03125+0.j,
+ -0.03125+0.j,  0.03125+0.j, -0.03125+0.j]), offset:-0.0625
+instantiating estimator...
+beginning scan...
+  
+-------Depth 1-------
+creating QAOAAnsatz of depth 1...
+creating scan params...
+creating cartesian grid over [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32 and fixed parameters []...
+running estimator with scan parameters...
+evaluating best parameters...
+Best params for depth 1:
+params [0.6587210402688277, -3.141592653589793] with expectation -0.41652775233765094
+params [-0.6587210402688276, 3.141592653589793] with expectation -0.4165277523376506
+params [0.6587210402688277, -2.938909256584] with expectation -0.41476606657552273
+params [-0.6587210402688276, 2.938909256584] with expectation -0.41476606657552245
+params [0.7600627387717243, -3.141592653589793] with expectation -0.4100378987487494
+params [-0.7600627387717241, 3.141592653589793] with expectation -0.4100378987487493
+params [0.6587210402688277, -2.736225859578207] with expectation -0.4100358735171093
+params [-0.6587210402688276, 2.736225859578207] with expectation -0.41003587351710885
+params [0.7600627387717243, -2.938909256584] with expectation -0.40825567546906844
+params [-0.7600627387717241, 2.938909256584] with expectation -0.4082556754690683
+saving results as json...
+  
+-------Depth 2-------
+fixing parameters to imported parameters [0.3, 0.3] for beta2,gamma2 and increasing depth...
+creating QAOAAnsatz of depth 2...
+creating scan params...
+creating cartesian grid over [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32 and fixed parameters [0.3, 0.3]...
+running estimator with scan parameters...
+evaluating best parameters...
+Best params for depth 2:
+params [0.3, -0.7600627387717241, 0.3, 2.938909256584] with expectation -0.4180007926868552
+params [0.3, -0.7600627387717241, 0.3, 2.736225859578207] with expectation -0.4173594679381132
+params [0.3, -0.6587210402688276, 0.3, 2.938909256584] with expectation -0.41705617733267747
+params [0.3, -0.6587210402688276, 0.3, 2.736225859578207] with expectation -0.41636473307646604
+params [0.3, -0.7600627387717241, 0.3, 3.141592653589793] with expectation -0.4160506798215135
+params [0.3, -0.6587210402688276, 0.3, 3.141592653589793] with expectation -0.41502049898405313
+params [0.3, -0.7600627387717241, 0.3, 2.533542462572414] with expectation -0.4138387590791144
+params [0.3, -0.6587210402688276, 0.3, 2.533542462572414] with expectation -0.41265932338035305
+params [0.3, 0.6587210402688277, 0.3, -3.141592653589793] with expectation -0.4121838865712196
+params [0.3, 0.7600627387717243, 0.3, -3.141592653589793] with expectation -0.4118242232090142
+saving results as json...
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Scan finished
+exists
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Plotting results for scans contained in ['./results/reproduction/max3sat/easy/linear_ramp_pos_mixer/32x32scan_6qubits_p1to2_None_optimized_general_symmetry']...
+-----------------------------------------------------------------------------------------------------------------------------------------------
+creating single instance plots...
+---Meshplot (1/1)---
+Plotting results as colormesh...
+saving plot: creating file for each format in ['pdf']...
+saved as ./results/reproduction/max3sat/easy/linear_ramp_pos_mixer/32x32scan_6qubits_p1to2_None_optimized_general_symmetry/meshplot_32x32scan_p2_6qubits.pdf

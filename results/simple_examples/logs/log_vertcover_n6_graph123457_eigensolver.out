@@ -1,0 +1,17 @@
+./graphs/u3R_6n_123457.gpickle
+computing minimum eigenvalue for SparsePauliOp(['IIIIIZ', 'IIIIZI', 'IIIZII', 'IIZIII', 'IZIIII', 'ZIIIII', 'IIIZIZ', 'IIIZZI', 'IIZIIZ', 'IIZIZI', 'IZIIZI', 'IZZIII', 'ZIIIIZ', 'ZIIZII', 'ZZIIII'],
+              coeffs=[4.75+0.j, 4.75+0.j, 4.75+0.j, 4.75+0.j, 4.75+0.j, 4.75+0.j, 1.75+0.j,
+ 1.75+0.j, 1.75+0.j, 1.75+0.j, 1.75+0.j, 1.75+0.j, 1.75+0.j, 1.75+0.j,
+ 1.75+0.j])
+Eigenvalue:[-14.75+0.j]; Eigenstate: [Statevector([0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 1.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j],
+            dims=(2, 2, 2, 2, 2, 2))]
+saving results as json in ./results/reproduction/vertcover/eigensolver...

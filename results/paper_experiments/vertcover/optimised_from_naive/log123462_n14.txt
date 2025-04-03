@@ -1,0 +1,26 @@
+Problem: SparsePauliOp(['IIIIIIIIIIIIIZ', 'IIIIIIIIIIIIZI', 'IIIIIIIIIIIZII', 'IIIIIIIIIIZIII', 'IIIIIIIIIZIIII', 'IIIIIIIIZIIIII', 'IIIIIIIZIIIIII', 'IIIIIIZIIIIIII', 'IIIIIZIIIIIIII', 'IIIIZIIIIIIIII', 'IIIZIIIIIIIIII', 'IIZIIIIIIIIIII', 'IZIIIIIIIIIIII', 'ZIIIIIIIIIIIII', 'IIIIIIIIIIIZIZ', 'IIIIIIIIZIIIIZ', 'ZIIIIIIIIIIIIZ', 'IIIIIIIZIIIIZI', 'IIIIIIZIIIIIZI', 'IIIIIZIIIIIIZI', 'IIIIIIIZIIIZII', 'IIIIIZIIIIIZII', 'IIIZIIIIIIZIII', 'IIZIIIIIIIZIII', 'IZIIIIIIIIZIII', 'IIIIIIZIIZIIII', 'IIIZIIIIIZIIII', 'IZIIIIIIIZIIII', 'IIIIIIZIZIIIII', 'ZIIIIIIIZIIIII', 'IIIIZIIZIIIIII', 'ZIIIIZIIIIIIII', 'IIZIZIIIIIIIII', 'IZIIZIIIIIIIII', 'IIZZIIIIIIIIII'],
+              coeffs=[10.75+0.j, 10.75+0.j, 10.75+0.j, 10.75+0.j, 10.75+0.j, 10.75+0.j,
+ 10.75+0.j, 10.75+0.j, 10.75+0.j, 10.75+0.j, 10.75+0.j, 10.75+0.j,
+ 10.75+0.j, 10.75+0.j,  3.75+0.j,  3.75+0.j,  3.75+0.j,  3.75+0.j,
+  3.75+0.j,  3.75+0.j,  3.75+0.j,  3.75+0.j,  3.75+0.j,  3.75+0.j,
+  3.75+0.j,  3.75+0.j,  3.75+0.j,  3.75+0.j,  3.75+0.j,  3.75+0.j,
+  3.75+0.j,  3.75+0.j,  3.75+0.j,  3.75+0.j,  3.75+0.j])
+instantiating sampler...
+instantiating COBYLA optimizer...
+loading best parameters for highest p found in ./graphs/u3R_14n_123462.gpickle...
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Optimizing QAOA parameters for 7 layers using COBYLA starting from initial point [0.5573793417659312, -0.1520125477543448, 0.05067084925144827, 0.05067084925144827, 0.05067084925144827, 0.05067084925144827, -0.05067084925144827, 2.533542462572414, -1.5201254775434483, -1.3174420805376552, -1.9254922715550344, 1.1147586835318624, 0.3040250955086896, 2.330859065566621]...
+-----------------------------------------------------------------------------------------------------------------------------------------------
+instantiating QAOA wrapper...
+running optimization...
+Optimization finished
+n: 14
+p: 7
+init_params: [0.5573793417659312, -0.1520125477543448, 0.05067084925144827, 0.05067084925144827, 0.05067084925144827, 0.05067084925144827, -0.05067084925144827, 2.533542462572414, -1.5201254775434483, -1.3174420805376552, -1.9254922715550344, 1.1147586835318624, 0.3040250955086896, 2.330859065566621]
+optimizeroptimizer_evals: 1000
+opt_params: [ 0.55099528 -0.16300162  0.0279739   0.08171803  0.10095191  0.04611705
+ -0.07152102  2.52997202 -1.52231647 -1.31302397 -1.92096033  1.09822213
+  0.3047109   2.32059037]
+opt_value: -75.85941484050805
+optimizer_time: 884.06960105896
+-----------------------------------------------------------------------------------------------------------------------------------------------

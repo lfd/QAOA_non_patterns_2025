@@ -1,0 +1,28 @@
+using alpha=1.0 with 3 variables and 3 clauses
+SAT Formula:
+[((1, True), (0, True), (2, True)), ((1, True), (0, False), (2, True)), ((2, True), (1, False), (0, True))]
+SAT formula converted to QUBO: 
+[[ 0.  -0.5  0.5 -0.5  0.5 -0.5]
+ [-0.5  0.   0.5 -0.5 -0.5  0.5]
+ [ 0.5  0.5 -1.  -0.5 -0.5 -0.5]
+ [-0.5 -0.5 -0.5  2.   0.   0. ]
+ [ 0.5 -0.5 -0.5  0.   1.   0. ]
+ [-0.5  0.5 -0.5  0.   0.   1. ]]
+./qubos/3sat_6qubits_n3_m3_alpha10
+computing minimum eigenvalue for SparsePauliOp(['IIIIIZ', 'IIIIZI', 'IIIZII', 'IIZIII', 'IZIIII', 'ZIIIII', 'IIIIZZ', 'IIIZIZ', 'IIIZZI', 'IIZIIZ', 'IIZIZI', 'IIZZII', 'IZIIIZ', 'IZIIZI', 'IZIZII', 'ZIIIIZ', 'ZIIIZI', 'ZIIZII'],
+              coeffs=[ 0.09375+0.j,  0.09375+0.j,  0.28125+0.j, -0.09375+0.j, -0.09375+0.j,
+ -0.09375+0.j, -0.03125+0.j,  0.03125+0.j,  0.03125+0.j, -0.03125+0.j,
+ -0.03125+0.j, -0.03125+0.j,  0.03125+0.j, -0.03125+0.j, -0.03125+0.j,
+ -0.03125+0.j,  0.03125+0.j, -0.03125+0.j])
+Eigenvalue:[-0.5625+0.j]; Eigenstate: [Statevector([0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             1.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j,
+             0.+0.j],
+            dims=(2, 2, 2, 2, 2, 2))]
+saving results as json in ./results/reproduction/max3sat/easy/eigensolver...

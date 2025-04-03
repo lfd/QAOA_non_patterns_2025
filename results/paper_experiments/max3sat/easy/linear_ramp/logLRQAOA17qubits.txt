@@ -1,0 +1,207 @@
+using alpha=3.25 with 4 variables and 13 clauses
+SAT Formula:
+[((3, True), (0, True), (1, False)), ((0, True), (1, True), (2, False)), ((2, True), (0, False), (1, False)), ((3, True), (0, True), (2, True)), ((2, True), (3, False), (1, True)), ((3, False), (0, False), (2, True)), ((1, True), (0, False), (3, True)), ((3, False), (0, True), (1, True)), ((1, False), (2, False), (0, False)), ((3, False), (1, False), (2, False)), ((1, True), (0, False), (2, True)), ((0, True), (1, True), (2, False)), ((2, False), (0, True), (1, False))]
+SAT formula converted to QUBO: 
+[[ 1.   1.5 -1.5  1.  -0.5 -0.5  0.5 -0.5  0.   0.5  0.5 -0.5  0.5  0.
+   0.5 -0.5 -0.5]
+ [ 1.5 -1.   2.5  0.   0.5 -0.5  0.5  0.  -0.5  0.  -0.5 -0.5  0.5  0.5
+  -0.5 -0.5  0.5]
+ [-1.5  2.5  1.   0.5  0.   0.5 -0.5 -0.5 -0.5 -0.5  0.   0.   0.5  0.5
+  -0.5  0.5  0.5]
+ [ 1.   0.   0.5  0.  -0.5  0.   0.  -0.5  0.5  0.5 -0.5  0.5  0.   0.5
+   0.   0.   0. ]
+ [-0.5  0.5  0.  -0.5  1.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+   0.   0.   0. ]
+ [-0.5 -0.5  0.5  0.   0.   1.   0.   0.   0.   0.   0.   0.   0.   0.
+   0.   0.   0. ]
+ [ 0.5  0.5 -0.5  0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+   0.   0.   0. ]
+ [-0.5  0.  -0.5 -0.5  0.   0.   0.   2.   0.   0.   0.   0.   0.   0.
+   0.   0.   0. ]
+ [ 0.  -0.5 -0.5  0.5  0.   0.   0.   0.   1.   0.   0.   0.   0.   0.
+   0.   0.   0. ]
+ [ 0.5  0.  -0.5  0.5  0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+   0.   0.   0. ]
+ [ 0.5 -0.5  0.  -0.5  0.   0.   0.   0.   0.   0.   1.   0.   0.   0.
+   0.   0.   0. ]
+ [-0.5 -0.5  0.   0.5  0.   0.   0.   0.   0.   0.   0.   1.   0.   0.
+   0.   0.   0. ]
+ [ 0.5  0.5  0.5  0.   0.   0.   0.   0.   0.   0.   0.   0.  -1.   0.
+   0.   0.   0. ]
+ [ 0.   0.5  0.5  0.5  0.   0.   0.   0.   0.   0.   0.   0.   0.  -1.
+   0.   0.   0. ]
+ [ 0.5 -0.5 -0.5  0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+   1.   0.   0. ]
+ [-0.5 -0.5  0.5  0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+   0.   1.   0. ]
+ [-0.5  0.5  0.5  0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+   0.   0.   0. ]]
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Running qaoa with 17 qubits from p=1 to p=7 within bounds [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32
+-----------------------------------------------------------------------------------------------------------------------------------------------
+creating result directory...
+loading problem...
+./qubos/3sat_17qubits_n4_m13_alpha325
+Problem: SparsePauliOp(['IIIIIIIIIIIIIIIIZ', 'IIIIIIIIIIIIIIIZI', 'IIIIIIIIIIIIIIZII', 'IIIIIIIIIIIIIZIII', 'IIIIIIIIIIIIZIIII', 'IIIIIIIIIIIZIIIII', 'IIIIIIIIIIZIIIIII', 'IIIIIIIIIZIIIIIII', 'IIIIIIIIZIIIIIIII', 'IIIIIIIZIIIIIIIII', 'IIIIIIZIIIIIIIIII', 'IIIIIZIIIIIIIIIII', 'IIIIZIIIIIIIIIIII', 'IIIZIIIIIIIIIIIII', 'IIZIIIIIIIIIIIIII', 'IZIIIIIIIIIIIIIII', 'ZIIIIIIIIIIIIIIII', 'IIIIIIIIIIIIIIIZZ', 'IIIIIIIIIIIIIIZIZ', 'IIIIIIIIIIIIIZIIZ', 'IIIIIIIIIIIIZIIIZ', 'IIIIIIIIIIIZIIIIZ', 'IIIIIIIIIIZIIIIIZ', 'IIIIIIIIIZIIIIIIZ', 'IIIIIIIZIIIIIIIIZ', 'IIIIIIZIIIIIIIIIZ', 'IIIIIZIIIIIIIIIIZ', 'IIIIZIIIIIIIIIIIZ', 'IIZIIIIIIIIIIIIIZ', 'IZIIIIIIIIIIIIIIZ', 'ZIIIIIIIIIIIIIIIZ', 'IIIIIIIIIIIIIIZZI', 'IIIIIIIIIIIIZIIZI', 'IIIIIIIIIIIZIIIZI', 'IIIIIIIIIIZIIIIZI', 'IIIIIIIIZIIIIIIZI', 'IIIIIIZIIIIIIIIZI', 'IIIIIZIIIIIIIIIZI', 'IIIIZIIIIIIIIIIZI', 'IIIZIIIIIIIIIIIZI', 'IIZIIIIIIIIIIIIZI', 'IZIIIIIIIIIIIIIZI', 'ZIIIIIIIIIIIIIIZI', 'IIIIIIIIIIIIIZZII', 'IIIIIIIIIIIZIIZII', 'IIIIIIIIIIZIIIZII', 'IIIIIIIIIZIIIIZII', 'IIIIIIIIZIIIIIZII', 'IIIIIIIZIIIIIIZII', 'IIIIZIIIIIIIIIZII', 'IIIZIIIIIIIIIIZII', 'IIZIIIIIIIIIIIZII', 'IZIIIIIIIIIIIIZII', 'ZIIIIIIIIIIIIIZII', 'IIIIIIIIIIIIZZIII', 'IIIIIIIIIZIIIZIII', 'IIIIIIIIZIIIIZIII', 'IIIIIIIZIIIIIZIII', 'IIIIIIZIIIIIIZIII', 'IIIIIZIIIIIIIZIII', 'IIIZIIIIIIIIIZIII'],
+              coeffs=[-0.225+0.j, -0.375+0.j, -0.375+0.j, -0.3  +0.j, -0.075+0.j, -0.075+0.j,
+ -0.075+0.j, -0.075+0.j, -0.075+0.j, -0.075+0.j, -0.075+0.j, -0.075+0.j,
+ -0.075+0.j, -0.075+0.j, -0.075+0.j, -0.075+0.j, -0.075+0.j,  0.075+0.j,
+ -0.075+0.j,  0.05 +0.j, -0.025+0.j, -0.025+0.j,  0.025+0.j, -0.025+0.j,
+  0.025+0.j,  0.025+0.j, -0.025+0.j,  0.025+0.j,  0.025+0.j, -0.025+0.j,
+ -0.025+0.j,  0.125+0.j,  0.025+0.j, -0.025+0.j,  0.025+0.j, -0.025+0.j,
+ -0.025+0.j, -0.025+0.j,  0.025+0.j,  0.025+0.j, -0.025+0.j, -0.025+0.j,
+  0.025+0.j,  0.025+0.j,  0.025+0.j, -0.025+0.j, -0.025+0.j, -0.025+0.j,
+ -0.025+0.j,  0.025+0.j,  0.025+0.j, -0.025+0.j,  0.025+0.j,  0.025+0.j,
+ -0.025+0.j, -0.025+0.j,  0.025+0.j,  0.025+0.j, -0.025+0.j,  0.025+0.j,
+  0.025+0.j])
+instantiating estimator...
+beginning scan...
+  
+-------Depth 1-------
+creating QAOAAnsatz of depth 1...
+creating scan params...
+creating cartesian grid over [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32 and fixed parameters []...
+running estimator with scan parameters...
+evaluating best parameters...
+Best params for depth 1:
+params [-0.7600627387717241, 2.1281756685608277] with expectation -1.1574458860909786
+params [0.7600627387717243, -2.1281756685608277] with expectation -1.1574458860909784
+params [-0.7600627387717241, 2.330859065566621] with expectation -1.157300405367497
+params [0.7600627387717243, -2.330859065566621] with expectation -1.157300405367496
+params [0.6587210402688277, -2.1281756685608277] with expectation -1.1540984262992413
+params [-0.6587210402688276, 2.1281756685608277] with expectation -1.154098426299239
+params [0.6587210402688277, -2.330859065566621] with expectation -1.1478943110882007
+params [-0.6587210402688276, 2.330859065566621] with expectation -1.1478943110881978
+params [0.6587210402688277, -1.9254922715550344] with expectation -1.1441269967867695
+params [-0.6587210402688276, 1.9254922715550347] with expectation -1.1441269967867675
+saving results as json...
+  
+-------Depth 2-------
+fixing parameters to imported parameters [0.3, 0.085] for beta2,gamma2 and increasing depth...
+creating QAOAAnsatz of depth 2...
+creating scan params...
+creating cartesian grid over [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32 and fixed parameters [0.3, 0.085]...
+running estimator with scan parameters...
+evaluating best parameters...
+Best params for depth 2:
+params [0.3, -0.7600627387717241, 0.085, 2.1281756685608277] with expectation -1.1654047843839255
+params [0.3, -0.7600627387717241, 0.085, 2.330859065566621] with expectation -1.1582185691736753
+params [0.3, -0.7600627387717241, 0.085, 1.9254922715550347] with expectation -1.1576947463084706
+params [0.3, 0.7600627387717243, 0.085, -2.330859065566621] with expectation -1.151220945451472
+params [0.3, -0.6587210402688276, 0.085, 2.1281756685608277] with expectation -1.1507392387579682
+params [0.3, 0.7600627387717243, 0.085, -2.1281756685608277] with expectation -1.14937549817472
+params [0.3, -0.6587210402688276, 0.085, 1.9254922715550347] with expectation -1.1484611199235983
+params [0.3, 0.6587210402688277, 0.085, -2.1281756685608277] with expectation -1.1397972229304267
+params [0.3, 0.7600627387717243, 0.085, -2.533542462572414] with expectation -1.139286416541508
+params [0.3, -0.7600627387717241, 0.085, 2.533542462572414] with expectation -1.1384555803136682
+saving results as json...
+  
+-------Depth 3-------
+fixing parameters to imported parameters [0.3, 0.257, 0.085, 0.1] for beta3,gamma3 and increasing depth...
+creating QAOAAnsatz of depth 3...
+creating scan params...
+creating cartesian grid over [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32 and fixed parameters [0.3, 0.257, 0.085, 0.1]...
+running estimator with scan parameters...
+evaluating best parameters...
+Best params for depth 3:
+params [0.3, 0.257, -0.7600627387717241, 0.085, 0.1, 2.1281756685608277] with expectation -1.1743185093826785
+params [0.3, 0.257, -0.7600627387717241, 0.085, 0.1, 1.9254922715550347] with expectation -1.173279854224995
+params [0.3, 0.257, -0.8614044372746207, 0.085, 0.1, 2.1281756685608277] with expectation -1.1609197333616967
+params [0.3, 0.257, -0.7600627387717241, 0.085, 0.1, 2.330859065566621] with expectation -1.1603834862562954
+params [0.3, 0.257, -0.7600627387717241, 0.085, 0.1, 1.7228088745492416] with expectation -1.154905700626435
+params [0.3, 0.257, -0.8614044372746207, 0.085, 0.1, 1.9254922715550347] with expectation -1.1543759735474608
+params [0.3, 0.257, -0.8614044372746207, 0.085, 0.1, 2.330859065566621] with expectation -1.1536495798852013
+params [0.3, 0.257, -0.6587210402688276, 0.085, 0.1, 1.9254922715550347] with expectation -1.1474999432223634
+params [0.3, 0.257, -0.6587210402688276, 0.085, 0.1, 2.1281756685608277] with expectation -1.1430489440178662
+params [0.3, 0.257, -0.8614044372746207, 0.085, 0.1, 2.533542462572414] with expectation -1.1345761620197077
+saving results as json...
+  
+-------Depth 4-------
+fixing parameters to imported parameters [0.3, 0.257, 0.241, 0.085, 0.1, 0.12] for beta4,gamma4 and increasing depth...
+creating QAOAAnsatz of depth 4...
+creating scan params...
+creating cartesian grid over [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32 and fixed parameters [0.3, 0.257, 0.241, 0.085, 0.1, 0.12]...
+running estimator with scan parameters...
+evaluating best parameters...
+Best params for depth 4:
+params [0.3, 0.257, 0.241, -0.8614044372746207, 0.085, 0.1, 0.12, 2.1281756685608277] with expectation -1.1818912779237436
+params [0.3, 0.257, 0.241, -0.7600627387717241, 0.085, 0.1, 0.12, 1.9254922715550347] with expectation -1.1811303184633755
+params [0.3, 0.257, 0.241, -0.8614044372746207, 0.085, 0.1, 0.12, 1.9254922715550347] with expectation -1.1808834699131776
+params [0.3, 0.257, 0.241, -0.7600627387717241, 0.085, 0.1, 0.12, 2.1281756685608277] with expectation -1.1764256060188207
+params [0.3, 0.257, 0.241, -0.8614044372746207, 0.085, 0.1, 0.12, 2.330859065566621] with expectation -1.1686707979759876
+params [0.3, 0.257, 0.241, -0.7600627387717241, 0.085, 0.1, 0.12, 1.7228088745492416] with expectation -1.1679057969220306
+params [0.3, 0.257, 0.241, -0.8614044372746207, 0.085, 0.1, 0.12, 1.7228088745492416] with expectation -1.1635602821931676
+params [0.3, 0.257, 0.241, -0.7600627387717241, 0.085, 0.1, 0.12, 2.330859065566621] with expectation -1.1562735755890623
+params [0.3, 0.257, 0.241, -0.9627461357775172, 0.085, 0.1, 0.12, 2.1281756685608277] with expectation -1.1449179558569862
+params [0.3, 0.257, 0.241, -0.8614044372746207, 0.085, 0.1, 0.12, 2.533542462572414] with expectation -1.143371924675849
+saving results as json...
+  
+-------Depth 5-------
+fixing parameters to imported parameters [0.3, 0.257, 0.241, 0.171, 0.085, 0.1, 0.12, 0.15] for beta5,gamma5 and increasing depth...
+creating QAOAAnsatz of depth 5...
+creating scan params...
+creating cartesian grid over [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32 and fixed parameters [0.3, 0.257, 0.241, 0.171, 0.085, 0.1, 0.12, 0.15]...
+running estimator with scan parameters...
+evaluating best parameters...
+Best params for depth 5:
+params [0.3, 0.257, 0.241, 0.171, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 1.9254922715550347] with expectation -1.1940925764611434
+params [0.3, 0.257, 0.241, 0.171, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 2.1281756685608277] with expectation -1.1877460095226349
+params [0.3, 0.257, 0.241, 0.171, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 1.7228088745492416] with expectation -1.1841191073065813
+params [0.3, 0.257, 0.241, 0.171, -0.7600627387717241, 0.085, 0.1, 0.12, 0.15, 1.9254922715550347] with expectation -1.1768099372793732
+params [0.3, 0.257, 0.241, 0.171, -0.7600627387717241, 0.085, 0.1, 0.12, 0.15, 1.7228088745492416] with expectation -1.1714257705187787
+params [0.3, 0.257, 0.241, 0.171, -0.9627461357775172, 0.085, 0.1, 0.12, 0.15, 1.9254922715550347] with expectation -1.1685762999164233
+params [0.3, 0.257, 0.241, 0.171, -0.9627461357775172, 0.085, 0.1, 0.12, 0.15, 2.1281756685608277] with expectation -1.1679151317808494
+params [0.3, 0.257, 0.241, 0.171, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 2.330859065566621] with expectation -1.1673010256225733
+params [0.3, 0.257, 0.241, 0.171, -0.7600627387717241, 0.085, 0.1, 0.12, 0.15, 2.1281756685608277] with expectation -1.1642729110348486
+params [0.3, 0.257, 0.241, 0.171, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 1.5201254775434485] with expectation -1.15577740468127
+saving results as json...
+  
+-------Depth 6-------
+fixing parameters to imported parameters [0.3, 0.257, 0.241, 0.171, 0.129, 0.085, 0.1, 0.12, 0.15, 0.2] for beta6,gamma6 and increasing depth...
+creating QAOAAnsatz of depth 6...
+creating scan params...
+creating cartesian grid over [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32 and fixed parameters [0.3, 0.257, 0.241, 0.171, 0.129, 0.085, 0.1, 0.12, 0.15, 0.2]...
+running estimator with scan parameters...
+evaluating best parameters...
+Best params for depth 6:
+params [0.3, 0.257, 0.241, 0.171, 0.129, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 0.2, 1.7228088745492416] with expectation -1.1972142964746133
+params [0.3, 0.257, 0.241, 0.171, 0.129, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 0.2, 1.9254922715550347] with expectation -1.1954337294575412
+params [0.3, 0.257, 0.241, 0.171, 0.129, -0.9627461357775172, 0.085, 0.1, 0.12, 0.15, 0.2, 1.9254922715550347] with expectation -1.1887409654140058
+params [0.3, 0.257, 0.241, 0.171, 0.129, -0.9627461357775172, 0.085, 0.1, 0.12, 0.15, 0.2, 1.7228088745492416] with expectation -1.1855025702551365
+params [0.3, 0.257, 0.241, 0.171, 0.129, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 0.2, 1.5201254775434485] with expectation -1.1813031201068482
+params [0.3, 0.257, 0.241, 0.171, 0.129, -0.9627461357775172, 0.085, 0.1, 0.12, 0.15, 0.2, 2.1281756685608277] with expectation -1.1782187596591163
+params [0.3, 0.257, 0.241, 0.171, 0.129, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 0.2, 2.1281756685608277] with expectation -1.1781921324623414
+params [0.3, 0.257, 0.241, 0.171, 0.129, -0.9627461357775172, 0.085, 0.1, 0.12, 0.15, 0.2, 1.5201254775434485] with expectation -1.1667214924653269
+params [0.3, 0.257, 0.241, 0.171, 0.129, -0.7600627387717241, 0.085, 0.1, 0.12, 0.15, 0.2, 1.7228088745492416] with expectation -1.165377989514448
+params [0.3, 0.257, 0.241, 0.171, 0.129, -0.7600627387717241, 0.085, 0.1, 0.12, 0.15, 0.2, 1.9254922715550347] with expectation -1.15808729748057
+saving results as json...
+  
+-------Depth 7-------
+fixing parameters to imported parameters [0.3, 0.257, 0.241, 0.171, 0.129, 0.086, 0.085, 0.1, 0.12, 0.15, 0.2, 0.3] for beta7,gamma7 and increasing depth...
+creating QAOAAnsatz of depth 7...
+creating scan params...
+creating cartesian grid over [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32 and fixed parameters [0.3, 0.257, 0.241, 0.171, 0.129, 0.086, 0.085, 0.1, 0.12, 0.15, 0.2, 0.3]...
+running estimator with scan parameters...
+evaluating best parameters...
+Best params for depth 7:
+params [0.3, 0.257, 0.241, 0.171, 0.129, 0.086, -0.9627461357775172, 0.085, 0.1, 0.12, 0.15, 0.2, 0.3, 1.5201254775434485] with expectation -1.2019792532700482
+params [0.3, 0.257, 0.241, 0.171, 0.129, 0.086, -0.9627461357775172, 0.085, 0.1, 0.12, 0.15, 0.2, 0.3, 1.7228088745492416] with expectation -1.2014306657079759
+params [0.3, 0.257, 0.241, 0.171, 0.129, 0.086, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 0.2, 0.3, 1.5201254775434485] with expectation -1.1967500015870893
+params [0.3, 0.257, 0.241, 0.171, 0.129, 0.086, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 0.2, 0.3, 1.7228088745492416] with expectation -1.190934928000012
+params [0.3, 0.257, 0.241, 0.171, 0.129, 0.086, -0.9627461357775172, 0.085, 0.1, 0.12, 0.15, 0.2, 0.3, 1.9254922715550347] with expectation -1.1873362778962981
+params [0.3, 0.257, 0.241, 0.171, 0.129, 0.086, -0.9627461357775172, 0.085, 0.1, 0.12, 0.15, 0.2, 0.3, 1.3174420805376554] with expectation -1.1871431973405517
+params [0.3, 0.257, 0.241, 0.171, 0.129, 0.086, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 0.2, 0.3, 1.3174420805376554] with expectation -1.185046684521309
+params [0.3, 0.257, 0.241, 0.171, 0.129, 0.086, -0.8614044372746207, 0.085, 0.1, 0.12, 0.15, 0.2, 0.3, 1.9254922715550347] with expectation -1.1698956801309077
+params [0.3, 0.257, 0.241, 0.171, 0.129, 0.086, -1.0640878342804139, 0.085, 0.1, 0.12, 0.15, 0.2, 0.3, 1.7228088745492416] with expectation -1.1690695152267676
+params [0.3, 0.257, 0.241, 0.171, 0.129, 0.086, -1.0640878342804139, 0.085, 0.1, 0.12, 0.15, 0.2, 0.3, 1.5201254775434485] with expectation -1.165454471560742
+saving results as json...
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Scan finished
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Plotting results for scans contained in ['./results/32x32scan_17qubits_p1to7_None_optimized_general_symmetry']...
+-----------------------------------------------------------------------------------------------------------------------------------------------
+creating 2 plots
+---Meshplot (1/1)---
+Plotting results as colormesh...
+saving plot: creating file for each format in ['pdf']...
+saved as ./results/32x32scan_17qubits_p1to7_None_optimized_general_symmetry/meshplot_32x32scan_p7_17qubits.pdf

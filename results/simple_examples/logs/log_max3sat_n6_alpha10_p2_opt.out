@@ -1,0 +1,105 @@
+using alpha=1.0 with 3 variables and 3 clauses
+SAT Formula:
+[((1, True), (0, True), (2, True)), ((1, True), (0, False), (2, True)), ((2, True), (1, False), (0, True))]
+SAT formula converted to QUBO: 
+[[ 0.  -0.5  0.5 -0.5  0.5 -0.5]
+ [-0.5  0.   0.5 -0.5 -0.5  0.5]
+ [ 0.5  0.5 -1.  -0.5 -0.5 -0.5]
+ [-0.5 -0.5 -0.5  2.   0.   0. ]
+ [ 0.5 -0.5 -0.5  0.   1.   0. ]
+ [-0.5  0.5 -0.5  0.   0.   1. ]]
+loading problem...
+./qubos/3sat_6qubits_n3_m3_alpha10
+Problem: SparsePauliOp(['IIIIIZ', 'IIIIZI', 'IIIZII', 'IIZIII', 'IZIIII', 'ZIIIII', 'IIIIZZ', 'IIIZIZ', 'IIIZZI', 'IIZIIZ', 'IIZIZI', 'IIZZII', 'IZIIIZ', 'IZIIZI', 'IZIZII', 'ZIIIIZ', 'ZIIIZI', 'ZIIZII'],
+              coeffs=[ 0.09375+0.j,  0.09375+0.j,  0.28125+0.j, -0.09375+0.j, -0.09375+0.j,
+ -0.09375+0.j, -0.03125+0.j,  0.03125+0.j,  0.03125+0.j, -0.03125+0.j,
+ -0.03125+0.j, -0.03125+0.j,  0.03125+0.j, -0.03125+0.j, -0.03125+0.j,
+ -0.03125+0.j,  0.03125+0.j, -0.03125+0.j]), offset: -0.0625
+instantiating sampler...
+instantiating COBYLA optimizer...
+loading best parameters for highest p found in ./qubos/3sat_6qubits_n3_m3_alpha10...
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Optimizing QAOA parameters for 2 layers using COBYLA starting from initial point [0.3, -0.7600627387717241, 0.3, 2.938909256584]...
+-----------------------------------------------------------------------------------------------------------------------------------------------
+instantiating QAOA wrapper...
+running optimization...
+Optimization finished
+n: 6
+p: 2
+init_params: [0.3, -0.7600627387717241, 0.3, 2.938909256584]
+optimizeroptimizer_evals: 1000
+opt_params: [ 0.86045713 -1.2175011   2.84425149  4.90437823]
+opt_value: -0.4779249077068953
+optimizer_time: 385.0097713470459
+-----------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Running qaoa with 6 qubits from p=1 to p=2 within bounds [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32
+-----------------------------------------------------------------------------------------------------------------------------------------------
+creating result directory...
+loading problem...
+./qubos/3sat_6qubits_n3_m3_alpha10
+Problem: SparsePauliOp(['IIIIIZ', 'IIIIZI', 'IIIZII', 'IIZIII', 'IZIIII', 'ZIIIII', 'IIIIZZ', 'IIIZIZ', 'IIIZZI', 'IIZIIZ', 'IIZIZI', 'IIZZII', 'IZIIIZ', 'IZIIZI', 'IZIZII', 'ZIIIIZ', 'ZIIIZI', 'ZIIZII'],
+              coeffs=[ 0.09375+0.j,  0.09375+0.j,  0.28125+0.j, -0.09375+0.j, -0.09375+0.j,
+ -0.09375+0.j, -0.03125+0.j,  0.03125+0.j,  0.03125+0.j, -0.03125+0.j,
+ -0.03125+0.j, -0.03125+0.j,  0.03125+0.j, -0.03125+0.j, -0.03125+0.j,
+ -0.03125+0.j,  0.03125+0.j, -0.03125+0.j]), offset:-0.0625
+instantiating estimator...
+beginning scan...
+  
+-------Depth 1-------
+creating QAOAAnsatz of depth 1...
+creating scan params...
+creating cartesian grid over [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32 and fixed parameters []...
+running estimator with scan parameters...
+evaluating best parameters...
+Best params for depth 1:
+params [0.6587210402688277, -3.141592653589793] with expectation -0.41652775233765094
+params [-0.6587210402688276, 3.141592653589793] with expectation -0.4165277523376506
+params [0.6587210402688277, -2.938909256584] with expectation -0.41476606657552273
+params [-0.6587210402688276, 2.938909256584] with expectation -0.41476606657552245
+params [0.7600627387717243, -3.141592653589793] with expectation -0.4100378987487494
+params [-0.7600627387717241, 3.141592653589793] with expectation -0.4100378987487493
+params [0.6587210402688277, -2.736225859578207] with expectation -0.4100358735171093
+params [-0.6587210402688276, 2.736225859578207] with expectation -0.41003587351710885
+params [0.7600627387717243, -2.938909256584] with expectation -0.40825567546906844
+params [-0.7600627387717241, 2.938909256584] with expectation -0.4082556754690683
+saving results as json...
+  
+-------Depth 2-------
+fixing parameters to imported parameters [0.860457125936857, 2.8442514880828464] for beta2,gamma2 and increasing depth...
+creating QAOAAnsatz of depth 2...
+creating scan params...
+creating cartesian grid over [-1.5707963267948966, 1.5707963267948966]x[-3.141592653589793, 3.141592653589793] with resolution 32x32 and fixed parameters [0.860457125936857, 2.8442514880828464]...
+running estimator with scan parameters...
+evaluating best parameters...
+Best params for depth 2:
+params [0.860457125936857, -1.3681129297891035, 2.8442514880828464, 3.141592653589793] with expectation -0.45197032600995946
+params [0.860457125936857, -1.266771231286207, 2.8442514880828464, 3.141592653589793] with expectation -0.45048513012191105
+params [0.860457125936857, -1.3681129297891035, 2.8442514880828464, 2.938909256584] with expectation -0.44848717884958617
+params [0.860457125936857, -1.3681129297891035, 2.8442514880828464, 2.736225859578207] with expectation -0.44470462863689525
+params [0.860457125936857, -1.266771231286207, 2.8442514880828464, 2.938909256584] with expectation -0.44459144785671545
+params [0.860457125936857, -1.3681129297891035, 2.8442514880828464, 2.533542462572414] with expectation -0.4406665240744187
+params [0.860457125936857, -1.469454628292, 2.8442514880828464, 3.141592653589793] with expectation -0.4396076993523623
+params [0.860457125936857, -1.266771231286207, 2.8442514880828464, 2.736225859578207] with expectation -0.43823511716948393
+params [0.860457125936857, -1.469454628292, 2.8442514880828464, 2.938909256584] with expectation -0.43803888201732044
+params [0.860457125936857, -1.1654295327833104, 2.8442514880828464, 3.141592653589793] with expectation -0.4364375712134544
+saving results as json...
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Scan finished
+loading estimator_data_32x32scan_p1_6qubits.json and extracting data....
+loading estimator_data_32x32scan_p2_6qubits.json and extracting data....
+saving results as json...
+exists
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Plotting results for scans contained in ['./results/reproduction/max3sat/easy/optimised/32x32scan_6qubits_p1to2_COBYLA_optimized_general_symmetry']...
+-----------------------------------------------------------------------------------------------------------------------------------------------
+creating single instance plots...
+---Meshplot (1/1)---
+Plotting results as colormesh...
+saving plot: creating file for each format in ['pdf']...
+saved as ./results/reproduction/max3sat/easy/optimised/32x32scan_6qubits_p1to2_COBYLA_optimized_general_symmetry/meshplot_32x32scan_p2_6qubits.pdf
+
+   Return from subroutine COBYLA because the MAXFUN limit has been reached.
+
+   NFVALS = 1000   F =-4.779249E-01    MAXCV = 0.000000E+00
+   X = 8.604571E-01  -1.217501E+00   2.844251E+00   4.904378E+00
